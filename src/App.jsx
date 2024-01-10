@@ -1,5 +1,8 @@
 import { useState } from 'react'
 import './App.css'
+import bg from "./assets/images/bg1.png"
+import fg from "./assets/images/fg1.png"
+import ui from "./assets/images/ui.png"
 
 function App() {
   const [count, setCount] = useState(0)
@@ -45,11 +48,11 @@ function App() {
 
         <div class="relative flex-1/2 h-240 w-96 bg-green-200 flex items-center justify-center"> 
           
-          <img class="absolute opacity-90 object-cover rounded-lg h-144 w-90 blur-sm"src="./images/fg1.png"></img>
-          <img class="object-cover rounded-r-lg h-144 w-90" src="./images/bg1.png"></img> 
+          <img class="absolute opacity-90 object-cover rounded-lg h-144 w-90 blur-sm"src={fg}></img>
+          <img class="object-cover rounded-r-lg h-144 w-90" src={bg}></img> 
           <h1 class=" absolute text-5xl font-bold top-40  text-white">HueHub</h1>
           <p class="absolute top-56 text-lg text-green-300">Make your dreams colorful with us.</p>
-          <img class="absolute top-64 size-64"  src="./images/ui.png"></img>  
+          <img class="absolute top-64 size-64"  src={ui}></img>  
         </div>
       </div>
     </>
